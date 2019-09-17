@@ -1,0 +1,13 @@
+﻿@model  ICollection<CRUDOperation.Models.Customer>
+
+
+
+    <div class="container">
+        <partial name="~/Views/Shared/Common/_SuccessMessage.cshtml" />
+        <h1>Customer List</h1>
+        <div class="row">
+            <a href="/customer/create" class="btn btn-primary btn-row"><i class=" fa fa-plus-square"></i>  Create Customer</a>
+        </div>
+
+        <partial name="~/Views/Shared/Customer/_CustomerList.cshtml" model="Model"/>
+    </div>
