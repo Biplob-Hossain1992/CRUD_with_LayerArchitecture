@@ -8,6 +8,6 @@ namespace CRUDOperation.Abstractions.Repositories
 {
     public interface IProductRepository:IRepository<Product>
     {
-
+        
     }
 }

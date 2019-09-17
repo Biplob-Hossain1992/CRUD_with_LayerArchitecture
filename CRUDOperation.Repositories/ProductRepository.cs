@@ -1,4 +1,5 @@
-﻿using CRUDOperation.DatabaseContext;
+﻿using CRUDOperation.Abstractions.Repositories;
+using CRUDOperation.DatabaseContext;
 using CRUDOperation.Models;
 using CRUDOperation.Repositories.Base;
 using Microsoft.EntityFrameworkCore;
@@ -9,7 +10,7 @@ using System.Text;
 
 namespace CRUDOperation.Repositories
 {
-    public class ProductRepository:EFRepository<Product>
+    public class ProductRepository:EFRepository<Product>,IProductRepository
     {
         private CRUDOperationDbContext _db;
 

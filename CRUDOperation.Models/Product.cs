@@ -16,7 +16,7 @@ namespace CRUDOperation.Models
 
         public bool IsActive { get; set; }
 
-        public int CategoryId { get; set; }
+        public long CategoryId { get; set; }
         public virtual Category Category { get; set; }
 
         public byte[] ImageUrl { get; set; }

@@ -11,7 +11,7 @@ namespace CRUDOperation.Models
             Products = new List<Product>();
         }
 
-        public int Id { get; set; }
+        public long Id { get; set; }
         public string Name { get; set; }
 
         public virtual List<Product> Products { get; set; }

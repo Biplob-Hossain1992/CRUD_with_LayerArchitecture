@@ -100,7 +100,7 @@ namespace CRUDOperation.WebApp.Controllers
             productCreateViewModel.ExpireDate = product.ExpireDate;
             productCreateViewModel.IsActive = product.IsActive;
             productCreateViewModel.Category = product.Category;
-            productCreateViewModel.CategoryId = product.CategoryId;
+            productCreateViewModel.CategoryId = Convert.ToInt32(product.CategoryId);
             return View("Create", productCreateViewModel);
         }
         [HttpPost]

@@ -18,6 +18,9 @@ namespace CRUDOperation.Configurations
             services.AddTransient<ICustomerManager, CustomerManager>();
             services.AddTransient<ICustomerRepository, CustomerRepository>();
             services.AddTransient<DbContext, CRUDOperationDbContext>();
+
+            services.AddTransient<IProductManager, ProductManager>();
+            services.AddTransient<IProductRepository, ProductRepository>();
         }
     }
 }
